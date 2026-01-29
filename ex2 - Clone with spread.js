@@ -15,9 +15,7 @@ let originalArray = [1, 2, 3, 4, 5];
 
 function updateArray(array, index, newValue) {
    return [
-    ...array.slice(0, index),
-    newValue,
-    ...array.slice(index + 1)
+    ...array.slice(0, index),newValue,...array.slice(index + 1)
   ];
 }
 
